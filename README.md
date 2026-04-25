@@ -15,7 +15,7 @@
 ---
 
 <p>
-  <a href="www.linkedin.com/in/gustavo-domingues-da-silva-47bbb221b">
+  <a href="https://www.linkedin.com/in/gustavo-domingues-da-silva-47bbb221b">
     <img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&cache_seconds=1800"/>
   </a>
   
