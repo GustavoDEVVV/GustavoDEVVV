@@ -3,12 +3,12 @@
 <br>
 <p style="display: flex;">
   <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=GustavoDEVVV&show_icons=true&theme=radical"/>
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=GustavoDEVVV&layout=compact&theme=radical"/>
 </p>
 
 ---
 
 <p>
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=GustavoDEVVV&layout=compact&theme=radical"/>
   <img src="https://streak-stats.demolab.com?user=GustavoDEVVV&theme=radical&cache_seconds=1800"/>
 </p>
 
