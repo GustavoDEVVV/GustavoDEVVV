@@ -1,9 +1,9 @@
 <!-- TÍTULO COM ANIMAÇÃO -->
 ### Olá, me chamo Gustavo Domingues
 <br>
-<p>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=GustavoDEVVV&show_icons=true&theme=radical&cache_seconds=1800"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GustavoDEVVV&layout=compact&theme=radical&cache_seconds=1800"/>
+<p style="display: flex; align-items: center;">
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=GustavoDEVVV&show_icons=true&theme=radical"/>
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=GustavoDEVVV&layout=compact&theme=radical"/>
 </p>
 
 ---
@@ -19,7 +19,7 @@
     <img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&cache_seconds=1800"/>
   </a>
   
-  <a href="mailto:gustavodomingues009@gmail.ccom">
+  <a href="mailto:gustavodomingues009@gmail.com">
     <img src="https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&cache_seconds=1800"/>
   </a>
 
