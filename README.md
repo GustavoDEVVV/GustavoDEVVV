@@ -1,7 +1,7 @@
 <!-- TÍTULO COM ANIMAÇÃO -->
 ### Olá, me chamo Gustavo Domingues
 <br>
-<p>
+<p style="display: flex;">
   <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=GustavoDEVVV&show_icons=true&theme=radical"/>
   <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=GustavoDEVVV&layout=compact&theme=radical"/>
 </p>
