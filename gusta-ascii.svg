@@ -1,0 +1,432 @@
+<svg viewBox="0 0 640 603" xmlns="http://www.w3.org/2000/svg"
+     font-family="Consolas, 'Courier New', monospace" font-size="11">
+  <defs>
+    <clipPath id="wipe0">
+      <rect x="10" y="4" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="0.000s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe1">
+      <rect x="10" y="15" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="0.045s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe2">
+      <rect x="10" y="26" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="0.090s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe3">
+      <rect x="10" y="37" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="0.135s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe4">
+      <rect x="10" y="48" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="0.180s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe5">
+      <rect x="10" y="59" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="0.225s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe6">
+      <rect x="10" y="70" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="0.270s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe7">
+      <rect x="10" y="81" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="0.315s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe8">
+      <rect x="10" y="92" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="0.360s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe9">
+      <rect x="10" y="103" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="0.405s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe10">
+      <rect x="10" y="114" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="0.450s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe11">
+      <rect x="10" y="125" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="0.495s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe12">
+      <rect x="10" y="136" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="0.540s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe13">
+      <rect x="10" y="147" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="0.585s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe14">
+      <rect x="10" y="158" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="0.630s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe15">
+      <rect x="10" y="169" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="0.675s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe16">
+      <rect x="10" y="180" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="0.720s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe17">
+      <rect x="10" y="191" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="0.765s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe18">
+      <rect x="10" y="202" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="0.810s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe19">
+      <rect x="10" y="213" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="0.855s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe20">
+      <rect x="10" y="224" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="0.900s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe21">
+      <rect x="10" y="235" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="0.945s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe22">
+      <rect x="10" y="246" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="0.990s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe23">
+      <rect x="10" y="257" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="1.035s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe24">
+      <rect x="10" y="268" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="1.080s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe25">
+      <rect x="10" y="279" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="1.125s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe26">
+      <rect x="10" y="290" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="1.170s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe27">
+      <rect x="10" y="301" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="1.215s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe28">
+      <rect x="10" y="312" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="1.260s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe29">
+      <rect x="10" y="323" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="1.305s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe30">
+      <rect x="10" y="334" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="1.350s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe31">
+      <rect x="10" y="345" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="1.395s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe32">
+      <rect x="10" y="356" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="1.440s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe33">
+      <rect x="10" y="367" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="1.485s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe34">
+      <rect x="10" y="378" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="1.530s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe35">
+      <rect x="10" y="389" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="1.575s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe36">
+      <rect x="10" y="400" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="1.620s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe37">
+      <rect x="10" y="411" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="1.665s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe38">
+      <rect x="10" y="422" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="1.710s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe39">
+      <rect x="10" y="433" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="1.755s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe40">
+      <rect x="10" y="444" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="1.800s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe41">
+      <rect x="10" y="455" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="1.845s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe42">
+      <rect x="10" y="466" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="1.890s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe43">
+      <rect x="10" y="477" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="1.935s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe44">
+      <rect x="10" y="488" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="1.980s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe45">
+      <rect x="10" y="499" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="2.025s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe46">
+      <rect x="10" y="510" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="2.070s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe47">
+      <rect x="10" y="521" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="2.115s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe48">
+      <rect x="10" y="532" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="2.160s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe49">
+      <rect x="10" y="543" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="2.205s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe50">
+      <rect x="10" y="554" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="2.250s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe51">
+      <rect x="10" y="565" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="2.295s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+    <clipPath id="wipe52">
+      <rect x="10" y="576" width="0" height="11">
+        <animate attributeName="width" from="0" to="640.0"
+                  begin="2.340s" dur="0.5s"
+                  fill="freeze" calcMode="ease-in-out" />
+      </rect>
+    </clipPath>
+  </defs>
+  <rect width="100%" height="100%" fill="#0d1117" />
+  <g fill="#c9d1d9" xml:space="preserve">
+    <text x="10" y="15" clip-path="url(#wipe0)">                                                                                                    </text>
+    <text x="10" y="26" clip-path="url(#wipe1)">                                            ...                                                     </text>
+    <text x="10" y="37" clip-path="url(#wipe2)">                                   ..:-``.`:==-````...                                              </text>
+    <text x="10" y="48" clip-path="url(#wipe3)">                                .:--+css***cc*+++**==`..                                            </text>
+    <text x="10" y="59" clip-path="url(#wipe4)">                           .`::=*sccsss#ssss#ssccccc*=--=-:`.                                       </text>
+    <text x="10" y="70" clip-path="url(#wipe5)">                         .`=s#cscss###sssss###sssssssc*+**++-`                                      </text>
+    <text x="10" y="81" clip-path="url(#wipe6)">                     ...`++cscsssss#%%###%%%%%%###%%%#s##s*+=`                                      </text>
+    <text x="10" y="92" clip-path="url(#wipe7)">                     .:-+s#ssscs#%##%%%%##%%%#%%%%%####%##*==:.                                     </text>
+    <text x="10" y="103" clip-path="url(#wipe8)">                     `=*s%####cs####%%#sccsscc*ccccc*ccss#ss*`                                      </text>
+    <text x="10" y="114" clip-path="url(#wipe9)">                     `=+cs####ss%ssssc****+++***+++****++*cs=.                                      </text>
+    <text x="10" y="125" clip-path="url(#wipe10)">                     .-*cs%@#ss##scc+====+++***++++++++++==c+.                                      </text>
+    <text x="10" y="136" clip-path="url(#wipe11)">                     .:+ss#%sc###%%s+====++*+++======++**++**:.                                     </text>
+    <text x="10" y="147" clip-path="url(#wipe12)">                      :css#####%%%@%*+++=+++===========++++++`.                                     </text>
+    <text x="10" y="158" clip-path="url(#wipe13)">                      .-s#####scsccs***+++==-----==--=-=+****`..                                    </text>
+    <text x="10" y="169" clip-path="url(#wipe14)">                        :*####s#s*+++++*+=-:::-=+c+====*#%%#s- ..                                   </text>
+    <text x="10" y="180" clip-path="url(#wipe15)">                         .+s####c=:::-=**cccss###s*++**s#ssc*-.                                     </text>
+    <text x="10" y="191" clip-path="url(#wipe16)">                        ..-ssss*:```:=*c****c##ss*+==c##ccccc:                                      </text>
+    <text x="10" y="202" clip-path="url(#wipe17)">                        :c*sssc+==--=======*c##s*=-::+cccc#s*-                                      </text>
+    <text x="10" y="213" clip-path="url(#wipe18)">                        :#*==*#c::--==+**sc*%@%*-:-c*+*c+***+-                                      </text>
+    <text x="10" y="224" clip-path="url(#wipe19)">                        .**cc+ss-:=**cc*cccsss*-:-*c=-=*++++*-                                      </text>
+    <text x="10" y="235" clip-path="url(#wipe20)">                         `*s#c+c=-=**cc*+=+c+=:::-+=::--=++++-.                                     </text>
+    <text x="10" y="246" clip-path="url(#wipe21)">                          :**#+*==+++*c*+=-----==--::::-=-+++=.                                     </text>
+    <text x="10" y="257" clip-path="url(#wipe22)">                           `c#s*+=+*+*c*+=-=++***-+=-==+****+=.                                     </text>
+    <text x="10" y="268" clip-path="url(#wipe23)">                            `::-+*+*+***=---===--=**csc#%scc*-                                      </text>
+    <text x="10" y="279" clip-path="url(#wipe24)">                              ..-***++++=-===-::-=*%@%##%@@@s`...                                   </text>
+    <text x="10" y="290" clip-path="url(#wipe25)">                        ...`-+-:-c+++++=--===+c##%@%sscccsss=-==:`.   ......                        </text>
+    <text x="10" y="301" clip-path="url(#wipe26)">                     `-*c**s#*`:cs+*+===--==+c%%#ssc******+**+=----:`..``:``......                  </text>
+    <text x="10" y="312" clip-path="url(#wipe27)">                  .:+s%#c#%#s-:-#*=+*+==---==++==++*cs#sc**ssc*--==c*+++-::``:::`::`..              </text>
+    <text x="10" y="323" clip-path="url(#wipe28)">                `-+*#%#c%@%#s-::s*=++***+=--=====++*csc**csssc=-==c%####+````:------:`...           </text>
+    <text x="10" y="334" clip-path="url(#wipe29)">              .-+c*s#%s#@%#s*::`=s+===++*+***++++=+*csss##sss=-==*%%####+....`::-:::::```..         </text>
+    <text x="10" y="345" clip-path="url(#wipe30)">             :+*csc#%##%%s#*-=:``+s*==+++++*c#%####%%%%%#ssc=-==*%@%sccs+`.  .```````:::```.... .   </text>
+    <text x="10" y="356" clip-path="url(#wipe31)">           `=ccssss#%###*=+*+sc```=s#*++**cs#############s*=-==*%@@s+====-:`....``--``:::`````..... </text>
+    <text x="10" y="367" clip-path="url(#wipe32)">         .=ccss###s##sc-:--``++-.``-*ssc*ccsssssssssccc*+=--===s@%%#*+=--====-:::-+=-``````::::``...</text>
+    <text x="10" y="378" clip-path="url(#wipe33)">       .:*ssss##%#ss*=****+--+++`.``:-=++**ccccsscc*=-::---++=-=s%%%ssc*=--===-=-=+==--::``::::--`..</text>
+    <text x="10" y="389" clip-path="url(#wipe34)">       :*s#ss#%%%sc+:`:=+*c+*s##c+++=-:-:-:::----::`:`-----*sssscc##s##%*``:--====+++=--:``:::::::`.</text>
+    <text x="10" y="400" clip-path="url(#wipe35)">       =ss##%%@%sc=-``:-===``=+**=+#%#s*+==--------==----==--==:-=*####%c. ..`-+*c*+=----::::---:``:</text>
+    <text x="10" y="411" clip-path="url(#wipe36)">       =%c#%@@@#+=*+=+*cc**-`:=++=`+%%%%%%%#sss#####ssccscc*+=::=+=*####s-.   .`-+**+=---:::----:```</text>
+    <text x="10" y="422" clip-path="url(#wipe37)">       -%sc%%@%+:-:```-+*cssc*csc*-:c%%%%%%##%%@@%c+=-:=ccsssccssssc*###ss-.  ....`-=-::::::----::``</text>
+    <text x="10" y="433" clip-path="url(#wipe38)">       :#%c%@#c-=+:..`::-=+++=-+css*c%%%%%%%%%%%c+=-:`:=+++-``-+++-:-+##s#%s=`......````````:::::``.</text>
+    <text x="10" y="444" clip-path="url(#wipe39)">       :s%%ss+-+sc++++===++++=-`-++-:+#%%%%%%%%ssscc**ccc*=:`:-++=::-:*#s#@@@#c=:``````````.```::`..</text>
+    <text x="10" y="455" clip-path="url(#wipe40)">       .c%@%*-:-+=`--==+c##sssc+=++-`-+#%%@%c+======+cssscscccsssc****cc#%@@%@@@%s+:```.......```...</text>
+    <text x="10" y="466" clip-path="url(#wipe41)">        =#@@%+=+*+````.`:=+**ccssssc**cs@@s+==---:::=++=::-===***++=====s%@@%@%@%#%#=``........`....</text>
+    <text x="10" y="477" clip-path="url(#wipe42)">       .-*#%@c+*ss++=-:::-==========-=*ccssssscccc****+=::-=::==-:```:-=+s@@@%%%s#@%#=```...........</text>
+    <text x="10" y="488" clip-path="url(#wipe43)">     .:+**c#%#+:==`:-+*ccccc**++===-:`:-----=+++**cccsssscccc**+=------+*c@@@%###%#s%%=`............</text>
+    <text x="10" y="499" clip-path="url(#wipe44)">     .=****s#%#*+-````:-=*ccssssssscc+===--:------::-----=+++*cc****ccss#s@@%%%%%sc#%##*:...........</text>
+    <text x="10" y="510" clip-path="url(#wipe45)">     .+cssss%%s-+*+=-::::--======++**ccccscccc**+=====-:::---=-:`.``::-++*@@%%%#sss#s###s-..........</text>
+    <text x="10" y="521" clip-path="url(#wipe46)">    .:++*s#%%%#-:-=+****+++++===--===---=-=++**ccss##scc****+=:````:::-==*%@@%%%%sssss##%%+`........</text>
+    <text x="10" y="532" clip-path="url(#wipe47)">    :*c++c##%%%*---``:-+*css#ssccc***++===--:`::-==+++**ccssccccc******ccc*#@@%%#sscs###@@@s+:......</text>
+    <text x="10" y="543" clip-path="url(#wipe48)">   .-##**ccs%%%%*++=:``::-=++++*ccssssssssc*+==========----:``::-=+++*c***s*ssc%%scs%%c#@%###sc=:...</text>
+    <text x="10" y="554" clip-path="url(#wipe49)">   .-*s**cs#%%%%s=+**+=---====---=======++**ccsssssssc*+--:``````:-----=+c*+c==##ss#%%s@%#ss####s:..</text>
+    <text x="10" y="565" clip-path="url(#wipe50)">   .-+==*css###%@c:-=--=*cssc***+++=========--===++**cccsssc*+++=+****ccs*+*==***s###ss#ss###%%%c```</text>
+    <text x="10" y="576" clip-path="url(#wipe51)">   .-=--+c#####%%@+-=-:``-+**cssss###ssccc**+===----::``:-==+*cssssssscc++s+-+---*ssscss#%%%%%##+.``</text>
+    <text x="10" y="587" clip-path="url(#wipe52)">. .:==+*s%%%%##%%#*=**+=-`::-======++**ccss####sc*+=-:::--::--=========++c*==-----+ccc##%%#s##%#-...</text>
+  </g>
+</svg>

@@ -1,16 +1,23 @@
-<!-- TÍTULO COM ANIMAÇÃO -->
+<!-- TÍTULO -->
 ### Olá, me chamo Gustavo Domingues
 <br>
-<p style="display: flex;">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=GustavoDEVVV&show_icons=true&theme=radical"/>
-</p>
 
----
+<div align="center">
 
-<p>
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=GustavoDEVVV&layout=compact&theme=radical"/>
-  <img src="https://streak-stats.demolab.com?user=GustavoDEVVV&theme=radical&cache_seconds=1800"/>
-</p>
+<h3><code>GustavoDEVVV@github ~ $ ./contributions.sh</code></h3>
+<img src="./contrib-heatmap.svg" width="860" />
+
+<br><br>
+
+<h3><code>GustavoDEVVV@github ~ $ whoami</code></h3>
+<table>
+  <tr>
+    <td valign="top"><img src="./gusta-ascii.svg" width="370" /></td>
+    <td valign="top"><img src="./info-card.svg" width="490" /></td>
+  </tr>
+</table>
+
+</div>
 
 ---
 
