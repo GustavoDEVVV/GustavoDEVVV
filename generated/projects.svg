@@ -65,7 +65,7 @@ y="50"
 
 text-anchor="middle"
 
-font-family="JetBrains Mono"
+font-family="monospace"
 
 font-size="18"
 
@@ -130,7 +130,7 @@ y="145"
 
 text-anchor="middle"
 
-font-family="JetBrains Mono"
+font-family="monospace"
 
 font-size="20"
 
@@ -148,13 +148,13 @@ x="90"
 
 y="185"
 
-font-family="JetBrains Mono"
+font-family="monospace"
 
-font-size="13"
+font-size="12"
 
 fill="#c9d1d9">
 
-Sistema Full Stack de gestão financeira
+Sistema Full Stack de gestão f
 
 </text>
 
@@ -166,7 +166,7 @@ x="90"
 
 y="245"
 
-font-family="JetBrains Mono"
+font-family="monospace"
 
 font-size="12"
 
@@ -212,7 +212,7 @@ x="110"
 
 y="305"
 
-font-family="JetBrains Mono"
+font-family="monospace"
 
 font-size="12"
 
@@ -281,7 +281,7 @@ y="145"
 
 text-anchor="middle"
 
-font-family="JetBrains Mono"
+font-family="monospace"
 
 font-size="20"
 
@@ -299,13 +299,13 @@ x="390"
 
 y="185"
 
-font-family="JetBrains Mono"
+font-family="monospace"
 
-font-size="13"
+font-size="12"
 
 fill="#c9d1d9">
 
-Ferramenta para produtividade de desenvolvedores
+Ferramenta para produtividade 
 
 </text>
 
@@ -317,7 +317,7 @@ x="390"
 
 y="245"
 
-font-family="JetBrains Mono"
+font-family="monospace"
 
 font-size="12"
 
@@ -363,7 +363,7 @@ x="410"
 
 y="305"
 
-font-family="JetBrains Mono"
+font-family="monospace"
 
 font-size="12"
 
@@ -432,7 +432,7 @@ y="145"
 
 text-anchor="middle"
 
-font-family="JetBrains Mono"
+font-family="monospace"
 
 font-size="20"
 
@@ -450,13 +450,13 @@ x="690"
 
 y="185"
 
-font-family="JetBrains Mono"
+font-family="monospace"
 
-font-size="13"
+font-size="12"
 
 fill="#c9d1d9">
 
-Leitor inteligente de documentos com OCR
+Leitor inteligente de document
 
 </text>
 
@@ -468,7 +468,7 @@ x="690"
 
 y="245"
 
-font-family="JetBrains Mono"
+font-family="monospace"
 
 font-size="12"
 
@@ -514,7 +514,7 @@ x="710"
 
 y="305"
 
-font-family="JetBrains Mono"
+font-family="monospace"
 
 font-size="12"
 

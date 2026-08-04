@@ -266,7 +266,7 @@ text-anchor="middle"
 
 fill="#8b949e"
 
-font-family="JetBrains Mono"
+font-family="monospace"
 
 font-size="14">
 
@@ -285,7 +285,7 @@ y="150"
 
 fill="#58a6ff"
 
-font-family="JetBrains Mono"
+font-family="monospace"
 
 font-size="32"
 
@@ -294,44 +294,27 @@ font-weight="bold">
 
 &gt; Gustavo Domingues
 
-<tspan class="cursor">
+<tspan>
 
 _
+
+<animate
+
+attributeName="opacity"
+
+values="1;0;1"
+
+dur="1s"
+
+repeatCount="indefinite"
+
+/>
 
 </tspan>
 
 
 </text>
 
-
-
-
-<style>
-
-.cursor{
-
-animation:blink 1s infinite;
-
-}
-
-
-@keyframes blink{
-
-0%,50%{
-
-opacity:1;
-
-}
-
-51%,100%{
-
-opacity:0;
-
-}
-
-}
-
-</style>
 
 
 
@@ -343,7 +326,7 @@ y="195"
 
 fill="#c9d1d9"
 
-font-family="JetBrains Mono"
+font-family="monospace"
 
 font-size="20">
 
@@ -361,7 +344,7 @@ y="225"
 
 fill="#8b949e"
 
-font-family="JetBrains Mono"
+font-family="monospace"
 
 font-size="16">
 

@@ -22,7 +22,7 @@ y="50"
 
 text-anchor="middle"
 
-font-family="JetBrains Mono"
+font-family="monospace"
 
 font-size="18"
 
@@ -103,7 +103,7 @@ y="145"
 
 text-anchor="middle"
 
-font-family="JetBrains Mono"
+font-family="monospace"
 
 font-size="20"
 
@@ -121,13 +121,13 @@ x="{x+20}"
 
 y="185"
 
-font-family="JetBrains Mono"
+font-family="monospace"
 
-font-size="13"
+font-size="12"
 
 fill="{TEXT}">
 
-{project["description"]}
+{project["description"][:30]}
 
 </text>
 
@@ -139,7 +139,7 @@ x="{x+20}"
 
 y="245"
 
-font-family="JetBrains Mono"
+font-family="monospace"
 
 font-size="12"
 
@@ -185,7 +185,7 @@ x="{x+40}"
 
 y="305"
 
-font-family="JetBrains Mono"
+font-family="monospace"
 
 font-size="12"
 

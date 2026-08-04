@@ -58,7 +58,7 @@ STACK = [
     },
     {
         "name": "Java",
-        "icon": "java"
+        "icon": "openjdk"
     },
     {
         "name": "Flask",

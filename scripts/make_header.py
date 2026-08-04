@@ -36,8 +36,6 @@ fill="url(#grid)"
 opacity="0.35"/>
 
 """
-
-
     # Partículas
 
     particles = [
@@ -135,7 +133,7 @@ text-anchor="middle"
 
 fill="{DIM}"
 
-font-family="JetBrains Mono"
+font-family="monospace"
 
 font-size="14">
 
@@ -159,7 +157,7 @@ y="150"
 
 fill="{PRIMARY}"
 
-font-family="JetBrains Mono"
+font-family="monospace"
 
 font-size="32"
 
@@ -168,9 +166,21 @@ font-weight="bold">
 
 &gt; {NAME}
 
-<tspan class="cursor">
+<tspan>
 
 _
+
+<animate
+
+attributeName="opacity"
+
+values="1;0;1"
+
+dur="1s"
+
+repeatCount="indefinite"
+
+/>
 
 </tspan>
 
@@ -179,41 +189,6 @@ _
 
 
 """
-
-
-    # Cursor animation
-
-    svg += """
-
-<style>
-
-.cursor{
-
-animation:blink 1s infinite;
-
-}
-
-
-@keyframes blink{
-
-0%,50%{
-
-opacity:1;
-
-}
-
-51%,100%{
-
-opacity:0;
-
-}
-
-}
-
-</style>
-
-"""
-
 
     # Cargo
 
@@ -227,7 +202,7 @@ y="195"
 
 fill="{TEXT}"
 
-font-family="JetBrains Mono"
+font-family="monospace"
 
 font-size="20">
 
@@ -245,7 +220,7 @@ y="225"
 
 fill="{DIM}"
 
-font-family="JetBrains Mono"
+font-family="monospace"
 
 font-size="16">
 

@@ -11,6 +11,28 @@ OUTPUT = GENERATED / "stack-icons.svg"
 ICON_DIR = ROOT / "assets" / "icons"
 
 
+def load_icon(icon):
+
+    path = ICON_DIR / icon
+
+    content = path.read_text(
+        encoding="utf-8"
+    )
+
+    content = content.replace(
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        ""
+    )
+
+    start = content.find(">") + 1
+    end = content.rfind("</svg>")
+
+    content = content[start:end]
+
+    return content
+
+
+
 TECHS = [
     ("React", "react.svg"),
     ("JavaScript", "javascript.svg"),
@@ -28,9 +50,8 @@ TECHS = [
 
 def build():
 
-
     width = 1000
-    height = 330
+    height = 410
 
 
     svg = svg_start(
@@ -39,7 +60,7 @@ def build():
     )
 
 
-    # Header terminal
+    # Container principal
 
     svg += f"""
 
@@ -51,9 +72,9 @@ y="35"
 
 width="920"
 
-height="250"
+height="360"
 
-rx="18"
+rx="20"
 
 fill="{CARD}"
 
@@ -64,13 +85,9 @@ stroke-width="2"
 />
 
 
-
 <circle cx="75" cy="70" r="7" fill="#ff5f56"/>
-
 <circle cx="100" cy="70" r="7" fill="#ffbd2e"/>
-
 <circle cx="125" cy="70" r="7" fill="#27c93f"/>
-
 
 
 <text
@@ -81,7 +98,7 @@ y="75"
 
 text-anchor="middle"
 
-font-family="JetBrains Mono"
+font-family="monospace"
 
 font-size="14"
 
@@ -91,29 +108,34 @@ stack.sh
 
 </text>
 
-
 """
 
 
+    # Layout com mais respiro
+
     positions = [
-        (130,140),
-        (230,140),
-        (330,140),
-        (430,140),
-        (530,140),
-        (630,140),
-        (730,140),
-        (830,140),
-        (380,235),
-        (620,235)
+
+        (140,150),
+        (290,150),
+        (440,150),
+        (590,150),
+        (740,150),
+        (890,150),
+
+        (215,285),
+        (365,285),
+        (515,285),
+        (665,285)
+
     ]
+
 
 
     for index, ((name, icon), pos) in enumerate(zip(TECHS, positions)):
 
-        x,y = pos
+        x, y = pos
 
-        delay = index * 0.25
+        delay = index * 0.15
 
 
         svg += f"""
@@ -121,15 +143,17 @@ stack.sh
 <g>
 
 
+<!-- animação suave -->
+
 <animateTransform
 
 attributeName="transform"
 
 type="translate"
 
-values="0 0;0 -10;0 0"
+values="0 0;0 -3;0 0"
 
-dur="2.8s"
+dur="4s"
 
 begin="{delay}s"
 
@@ -138,13 +162,14 @@ repeatCount="indefinite"
 />
 
 
+
 <circle
 
 cx="{x}"
 
 cy="{y}"
 
-r="34"
+r="38"
 
 fill="#010409"
 
@@ -156,30 +181,41 @@ stroke-width="1.5"
 
 
 
-<image
+<!-- Ícone -->
 
-href="../assets/icons/{icon}"
+<g transform="translate({x-22},{y-22}) scale(1.8)">
 
-x="{x-22}"
 
-y="{y-22}"
+<svg
 
-width="44"
+width="24"
 
-height="44"
+height="24"
 
-/>
+viewBox="0 0 24 24"
+
+fill="{TEXT}">
+
+
+{load_icon(icon)}
+
+
+</svg>
+
+
+</g>
+
 
 
 <text
 
 x="{x}"
 
-y="{y+58}"
+y="{y+68}"
 
 text-anchor="middle"
 
-font-family="JetBrains Mono"
+font-family="monospace"
 
 font-size="12"
 
@@ -196,65 +232,11 @@ fill="{TEXT}">
 """
 
 
-    # barra animada
-
-    svg += f"""
-
-<rect
-
-x="170"
-
-y="280"
-
-width="660"
-
-height="4"
-
-rx="4"
-
-fill="{BORDER}"
-
-/>
-
-
-<rect
-
-x="170"
-
-y="280"
-
-width="120"
-
-height="4"
-
-rx="4"
-
-fill="{PRIMARY}">
-
-
-<animate
-
-attributeName="x"
-
-values="170;710;170"
-
-dur="3s"
-
-repeatCount="indefinite"
-
-/>
-
-
-</rect>
-
-
-"""
-
-
     svg += svg_end()
 
 
     return svg
+
 
 
 
@@ -270,5 +252,8 @@ def main():
 
 
 
+
+
 if __name__ == "__main__":
+
     main()
