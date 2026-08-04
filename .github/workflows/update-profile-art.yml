@@ -1,38 +1,81 @@
 name: Update profile art
 
-"on":
+on:
   schedule:
-    - cron: "17 6 * * *"   # ~06:17 UTC todo dia
+    - cron: "17 6 * * *"
+
   workflow_dispatch: {}
+
   push:
     branches: [main]
+
 
 permissions:
   contents: write
 
-jobs:
-  heatmap:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+jobs:
+
+  profile:
+
+    runs-on: ubuntu-latest
+
+
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Instalar dependências (só as leves)
-        run: pip install requests beautifulsoup4
+
+      - name: Instalar dependências
+        run: |
+          pip install requests beautifulsoup4
+
+
+      # ==========================
+      # HEATMAP
+      # ==========================
 
       - name: Buscar contribuições públicas
         env:
           GITHUB_USERNAME: ${{ github.repository_owner }}
-        run: python scripts/fetch_contributions.py
+        run: |
+          python scripts/fetch_contributions.py
+
 
       - name: Renderizar heatmap SVG
-        run: python scripts/render_heatmap_svg.py
+        run: |
+          python scripts/render_heatmap_svg.py
 
-      - name: Commitar se algo mudou
+
+
+      # ==========================
+      # PROFILE ENGINE
+      # ==========================
+
+      - name: Gerar Profile Engine
+        run: |
+          python scripts/build.py
+
+
+
+      # ==========================
+      # COMMIT
+      # ==========================
+
+      - name: Commitar mudanças
         uses: stefanzweifel/git-auto-commit-action@v5
+
         with:
-          commit_message: "chore: atualiza gráfico de contribuições [skip ci]"
-          file_pattern: "data/contributions.json contrib-heatmap.svg"
+          commit_message: "chore: atualiza profile art [skip ci]"
+
+          file_pattern: |
+            data/contributions.json
+            contrib-heatmap.svg
+            generated/*.svg
