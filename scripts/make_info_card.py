@@ -7,228 +7,183 @@ OUTPUT = GENERATED / "info-card.svg"
 
 def build():
 
-    svg = svg_start(700, 430)
-
-
-    # janela
+    svg = svg_start(900, 420)
 
     svg += f"""
 
 <rect
-
 x="20"
-
 y="20"
-
-width="660"
-
-height="390"
-
+width="860"
+height="380"
 rx="18"
-
 fill="{CARD}"
-
 stroke="{BORDER}"
-
-stroke-width="2"
-
-/>
-
+stroke-width="2"/>
 
 <circle cx="55" cy="55" r="7" fill="#ff5f56"/>
-
 <circle cx="80" cy="55" r="7" fill="#ffbd2e"/>
-
 <circle cx="105" cy="55" r="7" fill="#27c93f"/>
 
-
-
 <text
-
-x="350"
-
+x="450"
 y="60"
-
 text-anchor="middle"
-
-font-family="JetBrains Mono"
-
+font-family="monospace"
 font-size="14"
-
 fill="{DIM}">
-
 profile.json
-
 </text>
 
-
 """
 
+    # ===================================================
+    # ASCII (temporário)
+    # Depois será substituído pelo gusta-ascii.svg
+    # ===================================================
 
-    # ASCII avatar
-
-    ascii_art = """
-
-     ███████
-   ██       ██
-  ██  ◉   ◉  ██
-  ██    ▄    ██
-   ██  ───  ██
-     ███████
-
+    ascii_art = r"""
+      _____
+     / ____|
+    | |  __ _   _ ___
+    | | |_ | | | / __|
+    | |__| | |_| \__ \
+     \_____|\__,_|___/
 """
-
 
     svg += f"""
 
 <text
-
-x="60"
-
-y="130"
-
-font-family="JetBrains Mono"
-
+x="80"
+y="165"
+font-family="monospace"
 font-size="18"
-
-fill="{PRIMARY}">
+fill="{PRIMARY}"
+xml:space="preserve">
 
 {ascii_art}
 
 </text>
 
+"""
+
+    # Quando for usar:
+    #
+    # <image
+    # href="../gusta-ascii.svg"
+    # x="55"
+    # y="90"
+    # width="220"
+    # height="220"/>
+
+    svg += f"""
+
+<line
+x1="300"
+y1="90"
+x2="300"
+y2="340"
+stroke="{BORDER}"
+stroke-width="2"/>
+
+<text
+x="340"
+y="120"
+font-family="monospace"
+font-size="28"
+font-weight="bold"
+fill="{TEXT}">
+{NAME}
+</text>
+
+<text
+x="340"
+y="150"
+font-family="monospace"
+font-size="17"
+fill="{PRIMARY}">
+{ROLE}
+</text>
+
+<line
+x1="340"
+y1="170"
+x2="780"
+y2="170"
+stroke="{BORDER}"
+stroke-width="1"/>
 
 """
 
+    info = [
 
-    # informações
-
-
-    data = [
-
-        ("name", NAME),
-
-        ("role", ROLE),
-
-        ("stack", "React / Python / Java"),
-
-        ("editor", "VS Code"),
-
-        ("database", "PostgreSQL"),
-
-        ("system", "Windows"),
-
-        ("status", "Coding...")
+        ("Focus", "React • UX • Performance"),
+        ("Backend", "Flask • Spring Boot"),
+        ("Database", "PostgreSQL"),
+        ("Deploy", "Vercel • Render"),
+        ("AI", "Gemini API"),
+        ("Status", "Open to Work")
 
     ]
 
+    y = 205
 
-    y = 120
-
-
-    for key,value in data:
-
+    for key, value in info:
 
         svg += f"""
 
 <text
-
-x="300"
-
+x="340"
 y="{y}"
-
-font-family="JetBrains Mono"
-
-font-size="15"
-
+font-family="monospace"
+font-size="14"
 fill="{DIM}">
-
 {key}
-
 </text>
-
-
 
 <text
-
-x="400"
-
+x="470"
 y="{y}"
-
-font-family="JetBrains Mono"
-
-font-size="15"
-
+font-family="monospace"
+font-size="14"
 fill="{TEXT}">
-
 {value}
-
 </text>
-
 
 """
 
-
-        y += 35
-
-
-
-    # status pulsando
-
+        y += 34
 
     svg += f"""
 
 <circle
-
-cx="305"
-
-cy="375"
-
+cx="340"
+cy="345"
 r="6"
-
 fill="{GREEN}">
 
-
 <animate
-
 attributeName="opacity"
-
-values="1;0.3;1"
-
-dur="1.5s"
-
-repeatCount="indefinite"
-
-/>
-
+values="1;.4;1"
+dur="1.8s"
+repeatCount="indefinite"/>
 
 </circle>
 
-
 <text
-
-x="325"
-
-y="380"
-
-font-family="JetBrains Mono"
-
+x="360"
+y="350"
+font-family="monospace"
 font-size="15"
-
 fill="{GREEN}">
-
 Available for opportunities
-
 </text>
 
 """
 
-
     svg += svg_end()
 
-
     return svg
-
 
 
 def main():
@@ -239,7 +194,6 @@ def main():
     )
 
     print("[OK] info-card.svg criado")
-
 
 
 if __name__ == "__main__":

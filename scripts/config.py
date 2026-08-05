@@ -13,9 +13,9 @@ NAME = "Gustavo Domingues"
 
 USERNAME = "GustavoDEVVV"
 
-ROLE = "Frontend Developer"
+ROLE = "Full Stack Developer (Focus in Front End and UX)"
 
-SUBTITLE = "UX Designer • Full Stack"
+SUBTITLE = "React • Flask • UX • Performance"
 
 
 # ======================
@@ -65,8 +65,16 @@ STACK = [
         "icon": "flask"
     },
     {
-        "name": "FastAPI",
-        "icon": "fastapi"
+        "name": "Spring",
+        "icon": "spring"
+    },
+    {
+        "name": "PostgreSQL",
+        "icon": "postgresql"
+    },
+    {
+        "name": "Docker",
+        "icon": "docker"
     },
     {
         "name": "Git",
@@ -78,10 +86,15 @@ STACK = [
     }
 ]
 
+
+# ======================
+# LINGUAGENS
+# ======================
+
 LANGUAGES = [
     {
         "name": "JavaScript",
-        "percent": 42,
+        "percent": 38,
         "color": "#f7df1e"
     },
     {
@@ -91,12 +104,12 @@ LANGUAGES = [
     },
     {
         "name": "Java",
-        "percent": 15,
+        "percent": 18,
         "color": "#ed8b00"
     },
     {
         "name": "CSS",
-        "percent": 10,
+        "percent": 11,
         "color": "#1572b6"
     },
     {
@@ -106,23 +119,28 @@ LANGUAGES = [
     }
 ]
 
+
+# ======================
+# PROJETOS
+# ======================
+
 PROJECTS = [
     {
         "name": "Axis",
-        "description": "Sistema Full Stack de gestão financeira",
-        "stack": "React • Flask • PostgreSQL",
+        "description": "Plataforma financeira com IA Generativa",
+        "stack": "React • Flask • PostgreSQL • Gemini",
         "status": "Active"
     },
     {
         "name": "CodeMorph",
-        "description": "Ferramenta para produtividade de desenvolvedores",
-        "stack": "React • FastAPI",
+        "description": "Converte HTML em componentes usando IA",
+        "stack": "React • Flask • AI",
         "status": "Development"
     },
     {
-        "name": "OCR Scanner",
-        "description": "Leitor inteligente de documentos com OCR",
-        "stack": "Python • OpenCV • Tesseract",
+        "name": "Dashboard Java",
+        "description": "Dashboard analítico com Spring Boot",
+        "stack": "Java • Spring • SQL",
         "status": "Completed"
     }
 ]

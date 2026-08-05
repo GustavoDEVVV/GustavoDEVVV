@@ -127,7 +127,7 @@ font-size="15"
 
 fill="#8b949e">
 
-42%
+38%
 
 </text>
 
@@ -171,7 +171,7 @@ attributeName="width"
 
 from="0"
 
-to="168"
+to="152"
 
 dur="1.5s"
 
@@ -305,7 +305,7 @@ font-size="15"
 
 fill="#8b949e">
 
-15%
+18%
 
 </text>
 
@@ -349,7 +349,7 @@ attributeName="width"
 
 from="0"
 
-to="60"
+to="72"
 
 dur="1.5s"
 
@@ -394,7 +394,7 @@ font-size="15"
 
 fill="#8b949e">
 
-10%
+11%
 
 </text>
 
@@ -438,7 +438,7 @@ attributeName="width"
 
 from="0"
 
-to="40"
+to="44"
 
 dur="1.5s"
 
