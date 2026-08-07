@@ -9,10 +9,8 @@ on:
   push:
     branches: [main]
 
-
 permissions:
   contents: write
-
 
 jobs:
 
@@ -20,39 +18,24 @@ jobs:
 
     runs-on: ubuntu-latest
 
-
     steps:
+
+      # ==========================
+      # CHECKOUT
+      # ==========================
 
       - name: Checkout repository
         uses: actions/checkout@v4
 
 
+      # ==========================
+      # PYTHON
+      # ==========================
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-
-
-      - name: Instalar dependências
-        run: |
-          pip install requests beautifulsoup4
-
-
-      # ==========================
-      # HEATMAP
-      # ==========================
-
-      - name: Buscar contribuições públicas
-        env:
-          GITHUB_USERNAME: ${{ github.repository_owner }}
-        run: |
-          python scripts/fetch_contributions.py
-
-
-      - name: Renderizar heatmap SVG
-        run: |
-          python scripts/render_heatmap_svg.py
-
 
 
       # ==========================
@@ -64,18 +47,14 @@ jobs:
           python scripts/build.py
 
 
-
       # ==========================
       # COMMIT
       # ==========================
 
       - name: Commitar mudanças
         uses: stefanzweifel/git-auto-commit-action@v5
-
         with:
           commit_message: "chore: atualiza profile art [skip ci]"
-
           file_pattern: |
-            data/contributions.json
-            contrib-heatmap.svg
             generated/*.svg
+            contrib-heatmap.svg
