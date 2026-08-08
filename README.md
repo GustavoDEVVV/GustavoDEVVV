@@ -6,7 +6,7 @@
 
 <br>
 
-<!-- <img src="./generated/info-card.svg" width="700"/> -->
+<img src="./generated/info-card.svg" width="700"/>
 
 <br>
 

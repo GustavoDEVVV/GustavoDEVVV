@@ -1,5 +1,5 @@
 from config import *
-from utils import save_file
+from utils import save_file, escape
 from svg_engine import svg_start, svg_end
 
 
@@ -9,7 +9,7 @@ OUTPUT = GENERATED / "info-card.svg"
 def build():
 
     width = 700
-    height = 430
+    height = 490
 
     svg = svg_start(width, height)
 
@@ -23,42 +23,40 @@ def build():
     x="20"
     y="20"
     width="660"
-    height="390"
+    height="430"
     rx="18"
     fill="{CARD}"
     stroke="{BORDER}"
     stroke-width="2"
 />
 
-<!-- Janela -->
 <circle
-    cx="48"
+    cx="55"
     cy="55"
-    r="6"
+    r="7"
     fill="#ff5f56"
 />
 
 <circle
-    cx="68"
+    cx="80"
     cy="55"
-    r="6"
+    r="7"
     fill="#ffbd2e"
 />
 
 <circle
-    cx="88"
+    cx="105"
     cy="55"
-    r="6"
+    r="7"
     fill="#27c93f"
 />
 
-<!-- Título -->
 <text
     x="350"
     y="60"
     text-anchor="middle"
-    font-family="JetBrains Mono, monospace"
-    font-size="13"
+    font-family="monospace"
+    font-size="14"
     fill="{DIM}">
     profile.json
 </text>
@@ -72,13 +70,13 @@ def build():
     svg += f"""
 
 <text
-    x="55"
-    y="105"
-    font-family="JetBrains Mono, monospace"
+    x="60"
+    y="115"
+    font-family="monospace"
     font-size="24"
     font-weight="bold"
     fill="{PRIMARY}">
-    {NAME}
+    {escape(NAME)}
 </text>
 
 """
@@ -87,14 +85,14 @@ def build():
     # SUBTÍTULO
     # =========================================================
 
-    svg += f"""
+    svg += """
 
 <text
-    x="55"
-    y="132"
-    font-family="JetBrains Mono, monospace"
-    font-size="13"
-    fill="{TEXT}">
+    x="60"
+    y="145"
+    font-family="monospace"
+    font-size="14"
+    fill="#8b949e">
     Full Stack Developer • Frontend • UX Designer
 </text>
 
@@ -107,10 +105,10 @@ def build():
     svg += f"""
 
 <line
-    x1="55"
-    y1="153"
-    x2="645"
-    y2="153"
+    x1="60"
+    y1="165"
+    x2="640"
+    y2="165"
     stroke="{BORDER}"
     stroke-width="1"
 />
@@ -123,82 +121,136 @@ def build():
 
     data = [
 
-        ("Focus", "React • UX • Performance"),
+        (
+            "Front-end & UX",
+            [
+                "React.js • Responsive Design • Arquitetura",
+                "de Componentes • Figma • Wireframes • GSAP"
+            ]
+        ),
 
-        ("Backend", "Flask • Spring Boot"),
+        (
+            "Backend",
+            [
+                "Flask • Spring Boot • APIs REST • Integração",
+                "Front ↔ Back • Manipulação de Arquivos"
+            ]
+        ),
 
-        ("Database", "PostgreSQL"),
+        (
+            "Database",
+            [
+                "PostgreSQL • SQLite • JSON • SQL Server"
+            ]
+        ),
 
-        ("Deploy", "Vercel • Render"),
+        (
+            "Deploy",
+            [
+                "Vercel • Render • Git • GitHub • CI/CD",
+                "(básico) • Gunicorn"
+            ]
+        ),
 
-        ("AI", "Gemini API"),
-
-        ("Status", "Open to Work")
+        (
+            "AI",
+            [
+                "Gemini API • Claude IA • ChatGPT • Engenharia",
+                "de Prompt • Automação de Tarefas"
+            ]
+        )
 
     ]
 
-    label_x = 70
-    value_x = 230
+    label_x = 60
+    value_x = 200
 
-    y = 185
+    y = 195
 
-    for key, value in data:
+    for key, lines in data:
+
+        # Escapa caracteres especiais do XML/SVG
+        safe_key = escape(key)
+
+        # =====================================================
+        # LABEL
+        # =====================================================
 
         svg += f"""
 
 <text
     x="{label_x}"
     y="{y}"
-    font-family="JetBrains Mono, monospace"
-    font-size="13"
-    fill="{DIM}">
-    {key}
+    font-family="monospace"
+    font-size="11"
+    font-weight="bold"
+    fill="{PRIMARY}">
+    {safe_key}
 </text>
+
+"""
+
+        # =====================================================
+        # CONTEÚDO
+        # =====================================================
+
+        for line_index, line in enumerate(lines):
+
+            safe_line = escape(line)
+
+            line_y = y + (line_index * 17)
+
+            svg += f"""
 
 <text
     x="{value_x}"
-    y="{y}"
-    font-family="JetBrains Mono, monospace"
-    font-size="13"
+    y="{line_y}"
+    font-family="monospace"
+    font-size="10"
     fill="{TEXT}">
-    {value}
+    {safe_line}
 </text>
 
 """
 
-        y += 32
+        # Espaçamento entre os blocos
+        y += 42
 
-    # =========================================================
-    # STATUS / DISPONIBILIDADE
-    # =========================================================
+# =========================================================
+# STATUS / DISPONIBILIDADE
+# =========================================================
 
     svg += f"""
 
-<circle
-    cx="70"
-    cy="380"
-    r="5"
-    fill="{GREEN}">
+    <circle
+        cx="65"
+        cy="415"
+        r="5"
+        fill="{GREEN}">
 
-    <animate
-        attributeName="opacity"
-        values="1;0.35;1"
-        dur="2s"
-        repeatCount="indefinite"
-    />
+        <animate
+            attributeName="opacity"
+            values="1;0.35;1"
+            dur="2s"
+            repeatCount="indefinite"
+        />
 
-</circle>
+    </circle>
 
-<text
-    x="88"
-    y="385"
-    font-family="JetBrains Mono, monospace"
-    font-size="13"
-    fill="{GREEN}">
-    Available for opportunities
-</text>
+    <text
+        x="80"
+        y="420"
+        font-family="monospace"
+        font-size="12"
+        fill="{GREEN}">
+        Available for opportunities
+    </text>
 
-"""
+    """
+
+    # =========================================================
+    # FINALIZA SVG
+    # =========================================================
 
     svg += svg_end()
 
