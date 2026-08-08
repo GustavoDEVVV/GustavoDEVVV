@@ -6,11 +6,11 @@
 
 <br>
 
-<img src="./generated/info-card.svg" width="700"/>
+<!-- <img src="./generated/info-card.svg" width="700"/> -->
 
 <br>
 
-<img src="./generated/stack-icons.svg" width="900"/>
+<!-- <img src="./generated/stack-icons.svg" width="900"/> -->
 
 <br>
 
