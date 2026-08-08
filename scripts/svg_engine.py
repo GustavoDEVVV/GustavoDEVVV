@@ -1,49 +1,50 @@
 from config import *
 
 
-def svg_start(width, height):
+def svg_start(
+    width,
+    height
+):
 
-    return f"""
+    return f"""<?xml version="1.0" encoding="UTF-8"?>
+
 <svg
+
 xmlns="http://www.w3.org/2000/svg"
+
+xmlns:xlink="http://www.w3.org/1999/xlink"
+
 width="{width}"
+
 height="{height}"
-viewBox="0 0 {width} {height}">
+
+viewBox="0 0 {width} {height}"
+
+role="img"
+
+>
 
 <defs>
 
 <linearGradient
-id="bgGradient">
+id="bgGradient"
+x1="0%"
+y1="0%"
+x2="100%"
+y2="100%"
+>
 
 <stop
 offset="0%"
-stop-color="{BG}" />
+stop-color="{BG}"
+/>
 
 <stop
 offset="100%"
-stop-color="#010409" />
+stop-color="#090d12"
+/>
 
 </linearGradient>
-
-
-<filter id="glow">
-
-<feGaussianBlur
-stdDeviation="5"
-result="coloredBlur"/>
-
-<feMerge>
-
-<feMergeNode
-in="coloredBlur"/>
-
-<feMergeNode
-in="SourceGraphic"/>
-
-</feMerge>
-
-</filter>
-
 
 </defs>
 
@@ -66,5 +67,7 @@ rx="18"
 def svg_end():
 
     return """
+
 </svg>
+
 """

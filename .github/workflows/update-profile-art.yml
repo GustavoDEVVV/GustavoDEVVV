@@ -1,22 +1,32 @@
 name: Update profile art
 
+
 on:
+
   schedule:
+
     - cron: "17 6 * * *"
+
 
   workflow_dispatch: {}
 
+
   push:
+
     branches: [main]
 
+
 permissions:
+
   contents: write
+
 
 jobs:
 
   profile:
 
     runs-on: ubuntu-latest
+
 
     steps:
 
@@ -25,6 +35,7 @@ jobs:
       # ==========================
 
       - name: Checkout repository
+
         uses: actions/checkout@v4
 
 
@@ -33,9 +44,40 @@ jobs:
       # ==========================
 
       - name: Setup Python
+
         uses: actions/setup-python@v5
+
         with:
+
           python-version: "3.11"
+
+
+      # ==========================
+      # DEPENDÊNCIAS
+      # ==========================
+
+      - name: Instalar dependências
+
+        run: |
+
+          pip install requests
+
+
+      # ==========================
+      # LINGUAGENS DO GITHUB
+      # ==========================
+
+      - name: Buscar linguagens dos repositórios
+
+        env:
+
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+        run: |
+
+          python scripts/fetch_languages.py
 
 
       # ==========================
@@ -43,7 +85,9 @@ jobs:
       # ==========================
 
       - name: Gerar Profile Engine
+
         run: |
+
           python scripts/build.py
 
 
@@ -52,9 +96,17 @@ jobs:
       # ==========================
 
       - name: Commitar mudanças
+
         uses: stefanzweifel/git-auto-commit-action@v5
+
         with:
+
           commit_message: "chore: atualiza profile art [skip ci]"
+
           file_pattern: |
+
+            data/languages.json
+
             generated/*.svg
+
             contrib-heatmap.svg

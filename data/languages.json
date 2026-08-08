@@ -1,0 +1,26 @@
+[
+  {
+    "name": "CSS",
+    "percent": 38.2
+  },
+  {
+    "name": "HTML",
+    "percent": 29.8
+  },
+  {
+    "name": "JavaScript",
+    "percent": 17.4
+  },
+  {
+    "name": "Python",
+    "percent": 8.4
+  },
+  {
+    "name": "Vue",
+    "percent": 3.7
+  },
+  {
+    "name": "Java",
+    "percent": 2.5
+  }
+]

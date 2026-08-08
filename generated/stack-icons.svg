@@ -1,44 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
 
 <svg
+
 xmlns="http://www.w3.org/2000/svg"
+
+xmlns:xlink="http://www.w3.org/1999/xlink"
+
 width="1000"
+
 height="410"
-viewBox="0 0 1000 410">
+
+viewBox="0 0 1000 410"
+
+role="img"
+
+>
 
 <defs>
 
 <linearGradient
-id="bgGradient">
+id="bgGradient"
+x1="0%"
+y1="0%"
+x2="100%"
+y2="100%"
+>
 
 <stop
 offset="0%"
-stop-color="#0d1117" />
+stop-color="#0d1117"
+/>
 
 <stop
 offset="100%"
-stop-color="#010409" />
+stop-color="#090d12"
+/>
 
 </linearGradient>
-
-
-<filter id="glow">
-
-<feGaussianBlur
-stdDeviation="5"
-result="coloredBlur"/>
-
-<feMerge>
-
-<feMergeNode
-in="coloredBlur"/>
-
-<feMergeNode
-in="SourceGraphic"/>
-
-</feMerge>
-
-</filter>
-
 
 </defs>
 
@@ -1012,4 +1010,6 @@ Figma
 </g>
 
 
+
 </svg>
+

@@ -1,5 +1,6 @@
 from pathlib import Path
 
+
 ROOT = Path(__file__).parent.parent
 
 GENERATED = ROOT / "generated"
@@ -15,7 +16,7 @@ USERNAME = "GustavoDEVVV"
 
 ROLE = "Full Stack Developer (Focus in Front End and UX)"
 
-SUBTITLE = "React • Flask • UX • Performance"
+SUBTITLE = ""
 
 
 # ======================
@@ -43,81 +44,66 @@ PURPLE = "#bc8cff"
 # STACK
 # ======================
 
-STACK = [
-    {
-        "name": "React",
-        "icon": "react"
-    },
-    {
-        "name": "JavaScript",
-        "icon": "javascript"
-    },
-    {
-        "name": "Python",
-        "icon": "python"
-    },
-    {
-        "name": "Java",
-        "icon": "openjdk"
-    },
-    {
-        "name": "Flask",
-        "icon": "flask"
-    },
-    {
-        "name": "Spring",
-        "icon": "spring"
-    },
-    {
-        "name": "PostgreSQL",
-        "icon": "postgresql"
-    },
-    {
-        "name": "Docker",
-        "icon": "docker"
-    },
-    {
-        "name": "Git",
-        "icon": "git"
-    },
-    {
-        "name": "Figma",
-        "icon": "figma"
-    }
-]
+# STACK = [
+
+#     {
+#         "name": "React",
+#         "icon": "react"
+#     },
+
+#     {
+#         "name": "JavaScript",
+#         "icon": "javascript"
+#     },
+
+#     {
+#         "name": "Python",
+#         "icon": "python"
+#     },
+
+#     {
+#         "name": "Java",
+#         "icon": "openjdk"
+#     },
+
+#     {
+#         "name": "Flask",
+#         "icon": "flask"
+#     },
+
+#     {
+#         "name": "Spring",
+#         "icon": "spring"
+#     },
+
+#     {
+#         "name": "PostgreSQL",
+#         "icon": "postgresql"
+#     },
+
+#     {
+#         "name": "Docker",
+#         "icon": "docker"
+#     },
+
+#     {
+#         "name": "Git",
+#         "icon": "git"
+#     },
+
+#     {
+#         "name": "Figma",
+#         "icon": "figma"
+#     }
+
+# ]
 
 
 # ======================
 # LINGUAGENS
 # ======================
 
-LANGUAGES = [
-    {
-        "name": "JavaScript",
-        "percent": 38,
-        "color": "#f7df1e"
-    },
-    {
-        "name": "Python",
-        "percent": 28,
-        "color": "#3776ab"
-    },
-    {
-        "name": "Java",
-        "percent": 18,
-        "color": "#ed8b00"
-    },
-    {
-        "name": "CSS",
-        "percent": 11,
-        "color": "#1572b6"
-    },
-    {
-        "name": "SQL",
-        "percent": 5,
-        "color": "#336791"
-    }
-]
+LANGUAGES = []
 
 
 # ======================
@@ -125,22 +111,44 @@ LANGUAGES = [
 # ======================
 
 PROJECTS = [
+
     {
         "name": "Axis",
-        "description": "Plataforma financeira com IA Generativa",
-        "stack": "React • Flask • PostgreSQL • Gemini",
-        "status": "Active"
+
+        "description":
+            "Plataforma financeira com IA Generativa",
+
+        "stack":
+            "React • Flask • PostgreSQL • Gemini",
+
+        "status":
+            "Active"
     },
+
     {
         "name": "CodeMorph",
-        "description": "Converte HTML em componentes usando IA",
-        "stack": "React • Flask • AI",
-        "status": "Development"
+
+        "description":
+            "Converte HTML em componentes usando IA",
+
+        "stack":
+            "React • Flask • AI",
+
+        "status":
+            "Development"
     },
+
     {
         "name": "Dashboard Java",
-        "description": "Dashboard analítico com Spring Boot",
-        "stack": "Java • Spring • SQL",
-        "status": "Completed"
+
+        "description":
+            "Dashboard analítico com Spring Boot",
+
+        "stack":
+            "Java • Spring • SQL",
+
+        "status":
+            "Completed"
     }
+
 ]

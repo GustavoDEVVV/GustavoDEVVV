@@ -1,7 +1,10 @@
 from pathlib import Path
 
 
-def save_file(path: Path, content: str):
+def save_file(
+    path: Path,
+    content: str
+):
 
     path.parent.mkdir(
         parents=True,
